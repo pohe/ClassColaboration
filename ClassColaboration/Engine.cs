@@ -43,7 +43,7 @@ namespace ClassColaboration
 
         public override string ToString()
         {
-            return $"Your engine has {_hp} horse points, uses the fuel type {fuel}, and emits {co2FromProduction} CO2";
+            return $"Your engine has {_hp} horse points, uses the fuel type {Fuel}, and emits {Co2FromProduction} CO2";
         }
     }
 

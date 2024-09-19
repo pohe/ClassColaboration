@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassColaboration
 {
-    internal class Wheel
+    public class Wheel
     {
 
         public int Year { get; set; }
