@@ -52,10 +52,16 @@ namespace ClassColaboration
             _theNavsys.Start();
         }
 
+        public double CalCo2Emission()
+        {
+            double totalCo2 = this.Co2FromProduction + _theEngine.Co2FromProduction + _theWheel.Co2 + _theNavsys.Co2FromProduction;
+            return totalCo2;
+        }
+
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"ModelName {ModelName} \nEngine {_theEngine.ToString()}  \nNavigationSystem {_theNavsys.ToString()} \nwheel {_theWheel.ToString()}";
         }
     }
 }

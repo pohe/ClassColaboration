@@ -32,6 +32,11 @@ namespace ClassColaboration
         }
         #endregion
 
+        public override string ToString()
+        {
+            return $"Producer {Producer } Description {Description} DisplayType  {DisplayType}";
+        }
+
     }
 }
 
